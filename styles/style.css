@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: black;
+    --secundary-color: white;
+    --tertiary-color: #22D4FD;
+    
+    --montserrat-font: "Montserrat", sans-serif;
+    --krona-font: "Krona One", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-left: 15%;
+    padding-top: 2%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--montserrat-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 10% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation__content {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-size: 2rem;
+    font-family: var(--krona-font);
+    color: var(--secundary-color);
+}
+
+.presentation__content__subtitle {
+    font-size: 1.5rem;
+    font-family: var(--krona-font);
+    color: var(--secundary-color);
+}
+
+.highlight-title {
+    color: var(--tertiary-color);
+}
+
+.presentation__content__message {
+    font-size: 1.5rem;
+    font-family: var(--montserrat-font);
+    color: var(--secundary-color);
+    text-align: justify;
+    margin: 0;
+}
+
+.presentation__anchors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__anchors__link:hover {
+    background-color: var(--primary-color);
+}
+
+.presentation__anchors__subtitle {
+    color: var(--secundary-color);
+    font-family: var(--krona-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentation__anchors__link {
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secundary-color);
+    text-align: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    width: 50%;
+    padding: 16px 0;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 8px;
+}
+
+.presentation__anchors__logo {
+    height: 32px;
+    width: 32px;
+}
+
+.presentation__content__experience__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation__content__experience__header__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation__photo {
+    width: 50%;
+}
+
+.footer {
+    background-color: var(--tertiary-color);
+    color: var(--secundary-color);
+    font-family: var(--montserrat-font);
+    font-size: 24px;
+    text-align: center;
+    padding: 23.64px 0;
+}
+
+.contact__info {
+    color: var(--secundary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.horizontal__rule {
+    background-color: var(--secundary-color);
+    height: 2px;
+    width: 100%;
+    border: none;
+}
+
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 5% 25% 0% 25%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
+}
